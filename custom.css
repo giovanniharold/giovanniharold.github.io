@@ -302,7 +302,7 @@ body, html {
 
 .round {
     border-radius: 50%;
-    box-shadow: 0 0 10px 2px black;
+    box-shadow: -5px 5px 15px 6px black;
 }
 
 @media screen and (min-width: 701px) {
