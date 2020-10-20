@@ -1,4 +1,4 @@
-$numDots: 20;
+$numDots: 18;
 $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
 $parentMaxWidth: 1000px;
@@ -18,11 +18,11 @@ $inactive: #AEB6BF;
 .flex-parent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     height: 100%;
     min-height: 500px;
+    margin-right: 10px;
 }
 
 .input-flex-container {
@@ -30,7 +30,8 @@ $inactive: #AEB6BF;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: $parentWidth;
+    margin-top: 80px;
+    width: 95%;
     max-width: $parentMaxWidth;
     position: relative;
     z-index: 0;
@@ -38,8 +39,8 @@ $inactive: #AEB6BF;
 }
 
 #TimelineInput {
-    width: $dotWidth;
-    height: $dotWidth;
+    width: $dotWidth + 20;
+    height: $dotWidth + 20;
     background-color: $active;
     position: relative;
     border-radius: 50%;
@@ -59,7 +60,7 @@ $inactive: #AEB6BF;
         top: 50%;
         transform: translateY(-50%);
         background-color: $active;
-        width: $parentWidth / $numDots;
+        width: $parentWidth / ($numDots);
         height: 5px;
         max-width: $parentMaxWidth / $numDots;
     }
@@ -79,15 +80,22 @@ $inactive: #AEB6BF;
         }
     }
     &:checked {
-        ~ input {
+        ~ #TimelineInput {
             &, &::before, &::after {
                 background-color: $inactive;
             }
         }
         + .dot-info {
             span {
-                font-size: 13px;
-                font-weight: bold;
+                // font-size: 13px;
+                // font-weight: bold;
+            }
+            .label {
+                transform: rotateZ(0);
+                transition-duration: 1s;
+                font-size: 35px;
+                width: 300px;
+                bottom: -170px;
             }
         }
     }
@@ -106,14 +114,17 @@ $inactive: #AEB6BF;
         position: absolute;
         font-size: 12px;
         &.year {
-            bottom: -30px;
-            left: 50%;
+            font-size: 30px;
+            top: -70px;
             transform: translateX(-50%);
+            width: 250px;
+            text-align: center;
+            left: 50%;
         }
         &.label {
-            top: -65px;
+            bottom: -75px;
             left: 0;
-            transform: rotateZ(-45deg);
+            transform: rotateZ(45deg);
             width: 70px;
             text-indent: -10px;
         }
@@ -121,22 +132,30 @@ $inactive: #AEB6BF;
 }
 
 #timeline-descriptions-wrapper {
-    width: 100%;
+    width: 95%;
     margin-top: 140px;
     font-size: 22px;
     font-weight: 400;
+    margin-top: 200px;
     margin-left: calc((-#{$parentWidth} - #{$dotWidth}) / #{$numDots});
     p {
         margin-top: 0;
         display: none;
     }
+    div {
+        margin-top: 0;
+        display: none;
+    }
 }
 
-$descriptions: '1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000';
+$descriptions: 'Montessori', 'LFA', 'Purdue', '1940', '1950', '1960', '1970', '1980', '1990', '2000';
 
 @each $desc in $descriptions {
     #TimelineInput[data-description="#{$desc}"]:checked ~ #timeline-descriptions-wrapper {
         p[data-description="#{$desc}"] {
+            display: block;
+        }
+        div[data-description="#{$desc}"] {
             display: block;
         }
     }
@@ -162,7 +181,7 @@ $descriptions: '1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 700px) {
     .flex-parent {
         justify-content: initial;
     }
@@ -177,7 +196,7 @@ $descriptions: '1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '
     }
     #TimelineInput, .dot-info {
         width: 60px;
-        height: 60x;
+        height: 60px;
         margin: 0 10px 50px;
     }
     #TimelineInput {
@@ -194,7 +213,14 @@ $descriptions: '1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '
                         font-size: 14px;
                     }
                     &.label {
-                        font-size: 12px;
+                        top: 65px;
+                        left: 0;
+                        transform: rotateZ(0deg);
+                        transition-duration: 0;
+                        width: 70px;
+                        text-indent: -10px;
+                        font-size: 13px;
+                        font-weight: bold;
                     }
                 }
             }
