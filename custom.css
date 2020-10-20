@@ -176,6 +176,20 @@ body, html {
     border-style: solid;
 }
 
+#aboutPortrait {
+    width: 300px;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 0 #000;
+    border: 5px black;
+    border-style: solid;
+}
+
 #aboutMe {
     margin-top: 20px;
     padding-top: 20px;
@@ -315,7 +329,10 @@ body, html {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
+    #aboutSection {
+        height: 180%;
+    }
     #name h1 {
       font-size: 30px;
     }
@@ -354,7 +371,7 @@ body, html {
 
 @media screen and (max-width: 991px) {
     #aboutSection {
-        height: 2300px;
+        height: 1800px;
     }
     #hardskills:after {
         display: none;
