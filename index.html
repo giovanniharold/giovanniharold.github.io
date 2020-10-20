@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="custom.css">
+        <link rel="stylesheet" href="scss/compiled.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -32,94 +34,185 @@
             </div>
         </div>
         
-        <div class="row" id="aboutSection">
-            <div class="col-lg-3" id="headshot">
-                <div id="portrait_container">
-                    <img id="portrait" src="images/Portrait_2.jpg">
+        <div id="aboutSection">
+            <div class="row">
+
+                <div class="col-lg-3" id="headshot">
+                    <div id="portrait_container">
+                        <img id="portrait" src="images/Portrait_2.jpg">
+                    </div>
+                    <div id="aboutMe">
+                        <h1 style="font-family: Roboto; text-align: center;">
+                            About
+                        </h1>
+                        <ul>
+                        <li>Emerging Programmer</li>
+                        <li>Data Science Enthusiast</li>
+                        <li>Italian/American Citizen</li>
+                        <li>Sailor</li>
+                        </ul>
+                        <p>I am really excited to be starting a new journey in coding. I believe that my education
+                            will provide the skills and my curiosity will provide the motivation to become
+                            a skilled Data Scientist.
+                        </p>
+                    </div>
                 </div>
-                <div id="aboutMe">
-                    <h1 style="font-family: Roboto; text-align: center;">
-                        About
-                    </h1>
-                    <ul>
-                    <li>Emerging Programmer</li>
-                    <li>Data Science Enthusiast</li>
-                    <li>Italian/American Citizen</li>
-                    <li>Sailor</li>
-                    </ul>
-                    <p>I am really excited to be starting a new journey in coding. I believe that my education
-                        will provide the skills and my curiosity will provide the motivation to become
-                        a skilled Data Scientist.
-                    </p>
-                </div>
-            </div>
-            <div id="row1" class="col-lg-9 row">
-                <!-- First Box -->
-                <div class="col-lg-6">
-                    <div class="flip-card">
-                        <div id="cardOne" class="flip-card-inner" onclick="flip1()">
-                            <div id="flipcardone" class="flip-card-front">
-                                <img class="tile" src="images/PurdueEngineeringLogo.png" style="height: 100%; width: 100%;">
+                <div class="col-lg-9">
+
+                    <!-- <h1 id="TimelineHeading" >Notable inventions, <span>1910-2000</span></h1> -->
+
+                    <div class="flex-parent">
+                        <div class="input-flex-container" >
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="Montessori">
+                            <div class="dot-info" data-description="Montessori">
+                                <!-- <span class="year">1910</span> -->
+                                <span class="label">Montessori</span>
                             </div>
-                            <div class="flip-card-back">
-                                <h1>Purdue University</h1>
-                                    <p>Bachelors in Industrial Engineering</p>
-                                    <li>IE 332 - Computers in Engineering</li>
-                                    <li>Member of Theta Tau Professional Engineering Fraternity</li>
-                                    <li>Intramural Sports - Softball, Ultimate Frisbee, Basketball</li>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="LFA">
+                            <div class="dot-info" data-description="LFA">
+                                <span class="year">Education</span>
+                                <span class="label">LFA</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="Purdue" checked>
+                            <div class="dot-info" data-description="Purdue">
+                                <!-- <span class="year">1930</span> -->
+                                <span class="label">Purdue</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1940">
+                            <div class="dot-info" data-description="1940">
+                                <!-- <span class="year">1940</span> -->
+                                <span class="label">Banner Day Camp</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1950">
+                            <div class="dot-info" data-description="1950">
+                                <span class="year">Work Experience</span>
+                                <span class="label">Scafuri Bakery</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1960">
+                            <div class="dot-info" data-description="1960">
+                                <!-- <span class="year">1960</span> -->
+                                <span class="label">Morey Corporation</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1970">
+                            <div class="dot-info" data-description="1970">
+                                <!-- <span class="year">1970</span> -->
+                                <span class="label">Sailing</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1980">
+                            <div class="dot-info" data-description="1980">
+                                <span class="year">Personal</span>
+                                <span class="label">DJing</span>
+                            </div>
+                            <input id="TimelineInput" type="radio" name="timeline-dot" data-description="1990">
+                            <div class="dot-info" data-description="1990">
+                                <!-- <span class="year">1980</span> -->
+                                <span class="label">Gaming</span>
+                            </div>
+                            <div id="timeline-descriptions-wrapper">
+                                
+                                <p data-description="Montessori">
+                                    <img id="aboutPortrait" src="images/montessori.jpg">
+                                    And future Call of Duty players would thank them. Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                                    laborum.
+                                </p>
+                                <p data-description="LFA">
+                                    <img id="aboutPortrait" src="images/LFALogo.gif">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                                    laborum.
+                                </p>
+                                <p data-description="Purdue">
+                                    <img id="aboutPortrait" src="images/PurdueEngineeringLogo.png">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                                    laborum.
+                                </p>
+                                <p data-description="1940">Because building roads is inconvenient.</p>
+                                <p data-description="1950">Ain’t nobody got time to rake.</p>
+                                <p data-description="1960">Because paper currency is for noobs.</p>
+                                <p data-description="1970">Nobody likes cords. Nobody.</p>
+                                <p data-description="1980">Brighter than glow memory.</p>
+                                <p data-description="1990">To capitalize on an as-yet nascent market for cat photos.</p>
+                                <p data-description="2000">Because organic search rankings take work.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Second Box -->
-                <div class="col-lg-6">
-                    <div class="flip-card">
-                        <div id="cardTwo" class="flip-card-inner"  onclick="flip2()">
-                            <div class="flip-card-front">
-                                <img class="tile" src="images/LFALogo.gif" style="height: 100%; width: 100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Lake Forest Academy</h1>
-                                <p>College Preparatory School</p>
-                                <li>First academic coding class - Computer Science</li>
-                                <li>Senior Stage Manager - Sound Director</li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Third Box -->
-                <div class="col-lg-6">
-                    <div class="flip-card">
-                        <div id="cardThree" class="flip-card-inner"  onclick="flip3()">
-                            <div class="flip-card-front">
-                                <img class="tile" src="images/MoreyLogo.webp" style="height: 100%; width: 100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Morey Corporation</h1>
-                                <p>Electrionics Manufacturing Facility</p>
-                                <li>Kaizen event contributor</li>
-                                <li>Defect monitoring</li>
-                                <li>Root cause analysis</li>
-                                <li>Designed and implemented new line layout</li>
+
+                    <!-- <div class="col-lg-6">
+                        <div class="flip-card">
+                            <div id="cardOne" class="flip-card-inner" onclick="flip1()">
+                                <div id="flipcardone" class="flip-card-front">
+                                    <img class="tile" src="images/PurdueEngineeringLogo.png" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Purdue University</h1>
+                                        <p>Bachelors in Industrial Engineering</p>
+                                        <li>IE 332 - Computers in Engineering</li>
+                                        <li>Member of Theta Tau Professional Engineering Fraternity</li>
+                                        <li>Intramural Sports - Softball, Ultimate Frisbee, Basketball</li>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Fourth Box -->
-                <div class="col-lg-6">
-                    <div class="flip-card">
-                        <div id="cardFour" class="flip-card-inner"  onclick="flip4()">
-                            <div class="flip-card-front">
-                                <img class="tile" src="images/ScafuriLogo.JPG" style="height: 100%; width: 100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Scafuri Bakery</h1>
-                                <p>Chicago Area Bakery</p>
-                                <li>Created training documentation</li>
-                                <li>Implemented order fulfillment tracking</li>
+                    <div class="col-lg-6">
+                        <div class="flip-card">
+                            <div id="cardTwo" class="flip-card-inner"  onclick="flip2()">
+                                <div class="flip-card-front">
+                                    <img class="tile" src="images/LFALogo.gif" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Lake Forest Academy</h1>
+                                    <p>College Preparatory School</p>
+                                    <li>First academic coding class - Computer Science</li>
+                                    <li>Senior Stage Manager - Sound Director</li>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="flip-card">
+                            <div id="cardThree" class="flip-card-inner"  onclick="flip3()">
+                                <div class="flip-card-front">
+                                    <img class="tile" src="images/MoreyLogo.webp" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Morey Corporation</h1>
+                                    <p>Electrionics Manufacturing Facility</p>
+                                    <li>Kaizen event contributor</li>
+                                    <li>Defect monitoring</li>
+                                    <li>Root cause analysis</li>
+                                    <li>Designed and implemented new line layout</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="flip-card">
+                            <div id="cardFour" class="flip-card-inner"  onclick="flip4()">
+                                <div class="flip-card-front">
+                                    <img class="tile" src="images/ScafuriLogo.JPG" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Scafuri Bakery</h1>
+                                    <p>Chicago Area Bakery</p>
+                                    <li>Created training documentation</li>
+                                    <li>Implemented order fulfillment tracking</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>

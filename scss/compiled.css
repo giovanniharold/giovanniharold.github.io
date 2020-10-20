@@ -1,0 +1,306 @@
+#TimelineHeading {
+  text-align: center;
+  height: 38px;
+  margin: 60px 0;
+}
+#TimelineHeading span {
+  white-space: nowrap;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  min-height: 500px;
+  margin-right: 10px;
+}
+
+.input-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  width: 95%;
+  max-width: 1000px;
+  position: relative;
+  z-index: 0;
+  margin-left: calc((80vw - 25px) / 18);
+}
+
+#TimelineInput {
+  width: 45px;
+  height: 45px;
+  background-color: #2c3E50;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+#TimelineInput:focus {
+  outline: none;
+}
+#TimelineInput::before, #TimelineInput::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2c3E50;
+  width: 4.4444444444vw;
+  height: 5px;
+  max-width: 55.5555555556px;
+}
+#TimelineInput::before {
+  left: calc(-4.4444444444vw + 12.5px);
+}
+#TimelineInput::after {
+  right: calc(-4.4444444444vw + 12.5px);
+}
+#TimelineInput:checked {
+  background-color: #2c3E50;
+}
+#TimelineInput:checked::before {
+  background-color: #2c3E50;
+}
+#TimelineInput:checked::after {
+  background-color: #AEB6BF;
+}
+#TimelineInput:checked ~ #TimelineInput, #TimelineInput:checked ~ #TimelineInput::before, #TimelineInput:checked ~ #TimelineInput::after {
+  background-color: #AEB6BF;
+}
+#TimelineInput:checked + .dot-info .label {
+  transform: rotateZ(0);
+  transition-duration: 1s;
+  font-size: 35px;
+  width: 300px;
+  bottom: -170px;
+}
+
+.dot-info {
+  width: 25px;
+  height: 25px;
+  display: block;
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+  left: calc((((80vw - 25px) / 18) * -1) - 1px);
+}
+.dot-info span {
+  visibility: visible;
+  position: absolute;
+  font-size: 12px;
+}
+.dot-info span.year {
+  font-size: 30px;
+  top: -70px;
+  transform: translateX(-50%);
+  width: 250px;
+  text-align: center;
+  left: 50%;
+}
+.dot-info span.label {
+  bottom: -75px;
+  left: 0;
+  transform: rotateZ(45deg);
+  width: 70px;
+  text-indent: -10px;
+}
+
+#timeline-descriptions-wrapper {
+  width: 95%;
+  margin-top: 140px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 200px;
+  margin-left: calc((-80vw - 25px) / 18);
+}
+#timeline-descriptions-wrapper p {
+  margin-top: 0;
+  display: none;
+}
+#timeline-descriptions-wrapper div {
+  margin-top: 0;
+  display: none;
+}
+
+#TimelineInput[data-description=Montessori]:checked ~ #timeline-descriptions-wrapper p[data-description=Montessori] {
+  display: block;
+}
+#TimelineInput[data-description=Montessori]:checked ~ #timeline-descriptions-wrapper div[data-description=Montessori] {
+  display: block;
+}
+
+#TimelineInput[data-description=LFA]:checked ~ #timeline-descriptions-wrapper p[data-description=LFA] {
+  display: block;
+}
+#TimelineInput[data-description=LFA]:checked ~ #timeline-descriptions-wrapper div[data-description=LFA] {
+  display: block;
+}
+
+#TimelineInput[data-description=Purdue]:checked ~ #timeline-descriptions-wrapper p[data-description=Purdue] {
+  display: block;
+}
+#TimelineInput[data-description=Purdue]:checked ~ #timeline-descriptions-wrapper div[data-description=Purdue] {
+  display: block;
+}
+
+#TimelineInput[data-description="1940"]:checked ~ #timeline-descriptions-wrapper p[data-description="1940"] {
+  display: block;
+}
+#TimelineInput[data-description="1940"]:checked ~ #timeline-descriptions-wrapper div[data-description="1940"] {
+  display: block;
+}
+
+#TimelineInput[data-description="1950"]:checked ~ #timeline-descriptions-wrapper p[data-description="1950"] {
+  display: block;
+}
+#TimelineInput[data-description="1950"]:checked ~ #timeline-descriptions-wrapper div[data-description="1950"] {
+  display: block;
+}
+
+#TimelineInput[data-description="1960"]:checked ~ #timeline-descriptions-wrapper p[data-description="1960"] {
+  display: block;
+}
+#TimelineInput[data-description="1960"]:checked ~ #timeline-descriptions-wrapper div[data-description="1960"] {
+  display: block;
+}
+
+#TimelineInput[data-description="1970"]:checked ~ #timeline-descriptions-wrapper p[data-description="1970"] {
+  display: block;
+}
+#TimelineInput[data-description="1970"]:checked ~ #timeline-descriptions-wrapper div[data-description="1970"] {
+  display: block;
+}
+
+#TimelineInput[data-description="1980"]:checked ~ #timeline-descriptions-wrapper p[data-description="1980"] {
+  display: block;
+}
+#TimelineInput[data-description="1980"]:checked ~ #timeline-descriptions-wrapper div[data-description="1980"] {
+  display: block;
+}
+
+#TimelineInput[data-description="1990"]:checked ~ #timeline-descriptions-wrapper p[data-description="1990"] {
+  display: block;
+}
+#TimelineInput[data-description="1990"]:checked ~ #timeline-descriptions-wrapper div[data-description="1990"] {
+  display: block;
+}
+
+#TimelineInput[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-description="2000"] {
+  display: block;
+}
+#TimelineInput[data-description="2000"]:checked ~ #timeline-descriptions-wrapper div[data-description="2000"] {
+  display: block;
+}
+
+@media (min-width: 1250px) {
+  .input-flex-container {
+    margin-left: 68.0555555556px;
+  }
+
+  #TimelineInput::before {
+    left: -43.0555555556px;
+  }
+  #TimelineInput::after {
+    right: -43.0555555556px;
+  }
+
+  .dot-info {
+    left: calc((((1000px - 25px) / 18) * -1) - 1px);
+  }
+
+  #timeline-descriptions-wrapper {
+    margin-left: -43.0555555556px;
+  }
+}
+@media (max-width: 700px) {
+  .flex-parent {
+    justify-content: initial;
+  }
+
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+
+  #TimelineInput, .dot-info {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 50px;
+  }
+
+  #TimelineInput {
+    background-color: transparent !important;
+    z-index: 1;
+  }
+  #TimelineInput::before, #TimelineInput::after {
+    content: none;
+  }
+  #TimelineInput:checked + .dot-info {
+    background-color: #2c3E50;
+  }
+  #TimelineInput:checked + .dot-info span.year {
+    font-size: 14px;
+  }
+  #TimelineInput:checked + .dot-info span.label {
+    top: 65px;
+    left: 0;
+    transform: rotateZ(0deg);
+    transition-duration: 0;
+    width: 70px;
+    text-indent: -10px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .dot-info {
+    visibility: visible;
+    border-radius: 50%;
+    z-index: 0;
+    left: 0;
+    margin-left: -70px;
+    background-color: #AEB6BF;
+  }
+  .dot-info span.year {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECF0F1;
+  }
+  .dot-info span.label {
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .input-flex-container {
+    width: 340px;
+  }
+}
+@media (max-width: 400px) {
+  .input-flex-container {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=compiled.css.map */
