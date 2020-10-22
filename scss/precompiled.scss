@@ -201,7 +201,6 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
         justify-content: center;
         width: 400px;
         height: auto;
-        margin-top: 15vh;
         margin-left: 0;
         padding-bottom: 30px;
     }
@@ -209,6 +208,9 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
+    }
+    #aboutSection {
+        height: 1300px;
     }
     #TimelineInput, .dot-info {
         width: 60px;
@@ -279,9 +281,18 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
     }
 }
 
+@media (max-width: 991px) {
+    #aboutSection {
+        height: 1800px;
+    }
+}
+
 @media (max-width: 480px) {
     .input-flex-container {
         width: 340px;
+    }
+    #aboutSection {
+        height: 1900px;
     }
 }
 
