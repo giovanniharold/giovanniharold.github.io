@@ -301,7 +301,7 @@ body, html {
     box-shadow: 0 0 2px 0 #888;
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 95%;
     top: 10px;
     left: 99%;
     display: block;
@@ -323,6 +323,15 @@ body, html {
 
 #skillBullet {
     padding-left: 15px;
+}
+
+hr {
+    display: none;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 701px) {
@@ -381,6 +390,9 @@ body, html {
     }
     #hardskills {
         padding-right: 15px;
+    }
+    hr {
+        display: block;
     }
 }
 
