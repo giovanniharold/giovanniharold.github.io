@@ -376,9 +376,6 @@ body, html {
 }
 
 @media screen and (max-width: 991px) {
-    #aboutSection {
-        height: 1800px;
-    }
     #hardskills:after {
         display: none;
     }
