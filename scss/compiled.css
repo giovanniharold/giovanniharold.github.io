@@ -116,6 +116,12 @@
   text-indent: -10px;
 }
 
+#skillBullet li {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: large;
+}
+
 #timeline-descriptions-wrapper {
   width: 95%;
   margin-top: 140px;
@@ -154,10 +160,10 @@
   display: block;
 }
 
-#TimelineInput[data-description="1940"]:checked ~ #timeline-descriptions-wrapper p[data-description="1940"] {
+#TimelineInput[data-description=Banner]:checked ~ #timeline-descriptions-wrapper p[data-description=Banner] {
   display: block;
 }
-#TimelineInput[data-description="1940"]:checked ~ #timeline-descriptions-wrapper div[data-description="1940"] {
+#TimelineInput[data-description=Banner]:checked ~ #timeline-descriptions-wrapper div[data-description=Banner] {
   display: block;
 }
 
@@ -233,7 +239,6 @@
     justify-content: center;
     width: 400px;
     height: auto;
-    margin-top: 15vh;
     margin-left: 0;
     padding-bottom: 30px;
   }
@@ -242,6 +247,10 @@
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  #aboutSection {
+    height: 1300px;
   }
 
   #TimelineInput, .dot-info {
@@ -310,9 +319,18 @@
     text-align: center;
   }
 }
+@media (max-width: 991px) {
+  #aboutSection {
+    height: 1800px;
+  }
+}
 @media (max-width: 480px) {
   .input-flex-container {
     width: 340px;
+  }
+
+  #aboutSection {
+    height: 1900px;
   }
 }
 @media (max-width: 400px) {

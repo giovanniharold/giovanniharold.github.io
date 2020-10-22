@@ -134,6 +134,14 @@ $inactive: #bebebe;
     }
 }
 
+#skillBullet {
+    li {
+        font-weight: bold;
+        font-style: oblique;
+        font-size: large;
+    }
+}
+
 #timeline-descriptions-wrapper {
     width: 95%;
     margin-top: 140px;
@@ -151,7 +159,7 @@ $inactive: #bebebe;
     }
 }
 
-$descriptions: 'Montessori', 'LFA', 'Purdue', '1940', '1950', '1960', '1970', '1980', '1990', '2000';
+$descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', '1980', '1990', '2000';
 
 @each $desc in $descriptions {
     #TimelineInput[data-description="#{$desc}"]:checked ~ #timeline-descriptions-wrapper {
@@ -193,7 +201,6 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', '1940', '1950', '1960', '1970', '1
         justify-content: center;
         width: 400px;
         height: auto;
-        margin-top: 15vh;
         margin-left: 0;
         padding-bottom: 30px;
     }
@@ -201,6 +208,9 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', '1940', '1950', '1960', '1970', '1
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
+    }
+    #aboutSection {
+        height: 1300px;
     }
     #TimelineInput, .dot-info {
         width: 60px;
@@ -271,9 +281,18 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', '1940', '1950', '1960', '1970', '1
     }
 }
 
+@media (max-width: 991px) {
+    #aboutSection {
+        height: 1800px;
+    }
+}
+
 @media (max-width: 480px) {
     .input-flex-container {
         width: 340px;
+    }
+    #aboutSection {
+        height: 1900px;
     }
 }
 
