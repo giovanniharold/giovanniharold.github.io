@@ -324,7 +324,7 @@
     height: 1800px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .input-flex-container {
     width: 300px;
   }
