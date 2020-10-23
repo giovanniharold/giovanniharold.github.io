@@ -88,6 +88,7 @@
   font-size: 35px;
   width: 300px;
   bottom: -170px;
+  font-weight: bold;
 }
 
 .dot-info {
@@ -137,10 +138,18 @@
 #timeline-descriptions-wrapper p {
   margin-top: 0;
   display: none;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 #timeline-descriptions-wrapper div {
   margin-top: 0;
   display: none;
+}
+
+#date {
+  color: #cecece;
+  font-style: italic;
+  font-size: 23px;
 }
 
 #TimelineInput[data-description=Montessori]:checked ~ #timeline-descriptions-wrapper p[data-description=Montessori] {
@@ -224,7 +233,7 @@
   }
 
   #aboutSection {
-    height: 1300px;
+    height: 1500px;
   }
 
   #TimelineInput, .dot-info {
@@ -240,7 +249,7 @@
   }
 
   #timeline-descriptions-wrapper {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   #TimelineInput {
@@ -299,7 +308,7 @@
 }
 @media (max-width: 991px) {
   #aboutSection {
-    height: 1800px;
+    height: 1900px;
   }
 }
 @media (max-width: 550px) {
@@ -308,7 +317,11 @@
   }
 
   #aboutSection {
-    height: 1900px;
+    height: 2300px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
 

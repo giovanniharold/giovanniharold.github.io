@@ -334,6 +334,18 @@ hr {
     padding: 0;
 }
 
+.content {
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 3px 1px black;
+    float: left;
+}
+
+.content p, h3 {
+    color: black;
+}
+
 @media screen and (min-width: 701px) {
     #name h1 {
         font-size: 75px;
