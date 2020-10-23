@@ -48,6 +48,7 @@ $inactive: #bebebe;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    transition-duration: 1s;
     cursor: pointer;
     &:focus {
         outline: none;
@@ -63,6 +64,7 @@ $inactive: #bebebe;
         width: $parentWidth / ($numDots);
         height: 5px;
         max-width: $parentMaxWidth / $numDots;
+        transition-duration: 1s;
     }
     &::before {
         left: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2});
@@ -75,6 +77,7 @@ $inactive: #bebebe;
         border-style: inset;
         border-color: #200c3f;
         border-width: 4px;
+        transition-duration: 1s;
         &::before {
             background-color: $active;
         }
@@ -86,13 +89,10 @@ $inactive: #bebebe;
         ~ #TimelineInput {
             &, &::before, &::after {
                 background-color: $inactive;
+                transition-duration: 1s;
             }
         }
         + .dot-info {
-            span {
-                // font-size: 13px;
-                // font-weight: bold;
-            }
             .label {
                 transform: rotateZ(0);
                 transition-duration: 1s;
@@ -166,9 +166,6 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
         p[data-description="#{$desc}"] {
             display: block;
         }
-        div[data-description="#{$desc}"] {
-            display: block;
-        }
     }
 }
 
@@ -232,6 +229,7 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
             content: none;
         }
         &:checked {
+            border-width: 0px;
             + .dot-info {
                 background-color: $active;
                 span {
@@ -239,6 +237,7 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', '1950', '1960', '1970', 
                         font-size: 14px;
                     }
                     &.label {
+                        transition-duration: 0s;
                         top: calc(100% + 5px);
                         left: 50%;
                         transform: translateX(-50%);
