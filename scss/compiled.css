@@ -154,42 +154,52 @@
 
 #TimelineInput[data-description=Montessori]:checked ~ #timeline-descriptions-wrapper p[data-description=Montessori] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description=LFA]:checked ~ #timeline-descriptions-wrapper p[data-description=LFA] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description=Purdue]:checked ~ #timeline-descriptions-wrapper p[data-description=Purdue] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description=Banner]:checked ~ #timeline-descriptions-wrapper p[data-description=Banner] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="1950"]:checked ~ #timeline-descriptions-wrapper p[data-description="1950"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="1960"]:checked ~ #timeline-descriptions-wrapper p[data-description="1960"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="1970"]:checked ~ #timeline-descriptions-wrapper p[data-description="1970"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="1980"]:checked ~ #timeline-descriptions-wrapper p[data-description="1980"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="1990"]:checked ~ #timeline-descriptions-wrapper p[data-description="1990"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 #TimelineInput[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-description="2000"] {
   display: block;
+  font-size: 1.1vw;
 }
 
 @media (min-width: 1250px) {
@@ -213,6 +223,46 @@
   }
 }
 @media (max-width: 1000px) {
+  #TimelineInput[data-description=Montessori]:checked ~ #timeline-descriptions-wrapper p[data-description=Montessori] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description=LFA]:checked ~ #timeline-descriptions-wrapper p[data-description=LFA] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description=Purdue]:checked ~ #timeline-descriptions-wrapper p[data-description=Purdue] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description=Banner]:checked ~ #timeline-descriptions-wrapper p[data-description=Banner] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="1950"]:checked ~ #timeline-descriptions-wrapper p[data-description="1950"] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="1960"]:checked ~ #timeline-descriptions-wrapper p[data-description="1960"] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="1970"]:checked ~ #timeline-descriptions-wrapper p[data-description="1970"] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="1980"]:checked ~ #timeline-descriptions-wrapper p[data-description="1980"] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="1990"]:checked ~ #timeline-descriptions-wrapper p[data-description="1990"] {
+    font-size: 19px;
+  }
+
+  #TimelineInput[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-description="2000"] {
+    font-size: 19px;
+  }
+
   .flex-parent {
     justify-content: initial;
   }
@@ -308,7 +358,7 @@
 }
 @media (max-width: 991px) {
   #aboutSection {
-    height: 1900px;
+    height: 2000px;
   }
 }
 @media (max-width: 550px) {
