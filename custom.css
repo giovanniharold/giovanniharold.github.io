@@ -118,6 +118,7 @@ body, html {
     padding-bottom: 60px;
     font-family: 'Roboto';
     background: url('images/grayscaleback.png') no-repeat center center;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -199,6 +200,10 @@ body, html {
     height: auto;
     width: 100%;
     float: right;
+}
+
+.AboutText {
+    font-size: 3vw;
 }
 
 #row1 {
