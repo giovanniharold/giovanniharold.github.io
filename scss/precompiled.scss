@@ -78,6 +78,7 @@ $inactive: #bebebe;
         border-color: #200c3f;
         border-width: 4px;
         transition-duration: 1s;
+        box-shadow: 0 0 3px 0 $active;
         &::before {
             background-color: $active;
         }
