@@ -5,6 +5,7 @@ var navbar = document.getElementById("navbar")
 function scrollFunction() {
   if (document.body.scrollTop > 20 || (document.documentElement.scrollTop > (window.innerHeight - 30))) {
     document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").style.position = "fixed";
   } else {
     document.getElementById("navbar").style.top = "-60px";
   }
