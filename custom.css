@@ -55,7 +55,7 @@ body, html {
     font-size: 20px;
     color: white;
     border-radius: 0px 5px 5px 0px;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto,sans-serif;
     font-weight: 300;
   }
   
@@ -225,6 +225,17 @@ body, html {
     height: auto;
     width: 100%;
     float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aboutMe li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#catTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
 .AboutText {
@@ -308,12 +319,44 @@ hr {
     padding: 0;
 }
 
+.testimonials {
+    overflow: hidden;
+    position: relative;
+    max-height: 300px;
+}
+  
+.testimonials {
+    background: #161d25;
+}
+  
+.one-slide, .testimonial, .message {
+    border: none !important;
+    outline: none !important;
+}
+  
+.icon-overlay {
+    position: absolute;
+    opacity: 0.3;
+    right: 10%;
+    top: 0;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
 .content {
     background-color: rgb(238, 238, 238);
     padding: 10px;
     margin: 20px;
+    border-radius: 8px;
     box-shadow: 0 0 3px 1px black;
     float: left;
+}
+
+.projectPic {
+    width:100%;max-width: 500px;
+    border: solid black;
+    border-radius: 8px;
 }
 
 .content p, h3 {
@@ -340,6 +383,7 @@ input[type=text], input[type=email], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    background-color:  rgb(243, 224, 255);
 }
 
 label {
@@ -370,6 +414,10 @@ input[type=submit]:hover {
     box-shadow: 0 0 5px 1px #200c3f;
 }
 
+#linkedinBadge {
+    margin-left: auto;
+}
+
 .col-25 {
     float: left;
     width: 25%;
@@ -386,6 +434,13 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+.footer {
+    margin-top: -180px;
+    height: 180px;
+    clear: both;
+    background-color: #333;
 }
 
 @media screen and (max-width: 400px) {
@@ -437,7 +492,44 @@ input[type=submit]:hover {
     .button {
         font-size: 10px;
     }
+    .footer {
+        margin-top: -100px;
+        height: 100px;
+    }
+    #contactSection {
+        height: 110%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+      max-height: 700px;
+    }
+    .icon-overlay {
+      height: 300px;
+      top: calc(50% - 150px);
+    }
+    .carousel-controls .control {
+      width: 25px;
+      height: 25px;
+      top: inherit;
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+    }
+    .control i {
+      font-size: .7rem;
+    }
+    .testimonials .message {
+      font-size: 1rem;
+    }
+    .testimonials h2 {
+      font-size: 1.5rem;
+    }
+  }
 
 @media screen and (max-height: 900px) {
     .flip-card-inner {
