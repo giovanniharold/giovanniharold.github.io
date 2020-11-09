@@ -23,6 +23,9 @@ body, html {
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    box-shadow: 0 0 4px 0 black;
+    -moz-box-shadow: 0 0 4px 0 black;
+    -webkit-box-shadow: 0 0 4px 0 black;
 }
 
 .button:hover {
@@ -117,6 +120,11 @@ body, html {
     color: black;
 }
 
+.active, .navbtn:hover {
+    background-color: #999;
+    color: black !important;
+}
+
 /* Main Page Background */
 .bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("images/image.jpg");
@@ -167,7 +175,8 @@ body, html {
     padding-top: 60px;
     font-family: 'Roboto';
     background-color: #666;
-    min-height: 100%;
+    height: 100%;
+    min-height: 600px;
     box-shadow: inset 0 0 40px 0 black;
     background: url('images/graywallpaper.jpg') no-repeat center center;
     background-attachment: fixed;
