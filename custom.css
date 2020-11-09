@@ -455,6 +455,9 @@ input[type=submit]:hover {
     #navbar a {
         font-size: 13px;
     }
+    #mySidenav a {
+        left: -100px;
+    }
 }
 
 @media screen and (min-width: 701px) {
