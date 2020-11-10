@@ -17,7 +17,7 @@ body, html {
 }
 
 .button {
-    background-color: #4e2092;
+    background-color: #200c3f;
     border-radius: 5px;
     color: white;
     padding: 12px 30px;
@@ -29,7 +29,7 @@ body, html {
 }
 
 .button:hover {
-    background-color: #200c3f;
+    background-color: #421b7c;
     text-decoration: none;
     color: white;
 }
@@ -57,40 +57,46 @@ body, html {
     text-align: right;
     font-size: 20px;
     color: white;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
     font-family: Roboto,sans-serif;
     font-weight: 300;
+    border: 1px #333 solid;
   }
   
 #mySidenav a:hover {
-    left: 0;
+    left: -10px;
     /* background-color: white;
     color: black; */
     box-shadow: 2px -2px 10px 0 black;
+    text-shadow: 0 4px 1px black;
 }
   
 #about {
     height: 100%;
     bottom: 0;
-    background-color: #222;
+    background-image: linear-gradient(to left, #333, transparent);
+    background-color: #000;
 }
   
 #skills {
     height: 75%;
     bottom: 0;
-    background-color: #444;
+    background-image: linear-gradient(to left, #555, transparent);
+    background-color: #222;
 }
   
 #projects {
     bottom: 0;
     height: 50%;
-    background-color: #666;
+    background-image: linear-gradient(to left, #777, transparent);
+    background-color: #333;
 }
   
 #contact {
     bottom: 0;
     height: 25%;
-    background-color: #888
+    background-image: linear-gradient(to left, #999, transparent);
+    background-color: #444;
 }
 
 #navbar {
@@ -492,18 +498,6 @@ input[type=submit]:hover {
     #name p {
         font-size: 9px;
     }
-    .flip-card-inner {
-        width: 300px;
-        height: 300px;
-    }
-    .flip-card-front {
-        width: 300px;
-        height: 300px;
-    }
-    .flip-card-back {
-        width: 300px;
-        height: 300px;
-    }
     .col-25, .col-75 {
         width: 100%;
         margin-top: 0;
@@ -513,6 +507,8 @@ input[type=submit]:hover {
     }
     .button {
         font-size: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     .footer {
         margin-top: -100px;
