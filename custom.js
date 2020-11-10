@@ -11,31 +11,6 @@ function scrollFunction() {
   }
 }
 
-function flip1() {
-  var x = 1;
-  if ((x % 2) == 0) {
-    document.getElementById('portrait').src="images/PurdueEngineeringLogo.png"
-  }
-  if ((x % 2) == 1) {
-    document.getElementById('portrait').src="images/Portrait_2.jpg"
-  }
-  $('#cardOne').toggleClass('flipped')
-  var x = x + 1;
-}
-
-function flip2() {
-  $('#cardTwo').toggleClass('flipped')
-
-}
-
-function flip3() {
-  $('#cardThree').toggleClass('flipped')
-}
-
-function flip4() {
-  $('#cardFour').toggleClass('flipped')
-}
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
