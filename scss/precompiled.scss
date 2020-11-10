@@ -101,6 +101,7 @@ $inactive: #bebebe;
                 width: 300px;
                 bottom: -170px;
                 font-weight: bold;
+                text-shadow: 0 5px 1px #200c3f;
             }
         }
     }
@@ -120,7 +121,7 @@ $inactive: #bebebe;
         font-size: 12px;
         &.year {
             font-size: 30px;
-            top: -70px;
+            top: -90px;
             transform: translateX(-50%);
             width: 250px;
             text-align: center;
@@ -263,6 +264,7 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', 'Morey', 'Scafuri', 'Gam
                         text-align: center;
                         font-size: 13px;
                         width: 70px;
+                        text-shadow: 0 2px 1px #200c3f;
                     }
                 }
             }
