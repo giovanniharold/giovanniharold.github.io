@@ -199,7 +199,7 @@ body, html {
     font-family: 'Roboto';
     background-color: #888;
     height: 100%;
-    min-height: 900px;
+    min-height: 1000px;
     /* box-shadow: inset 0 0 40px 0 black; */
     width: auto;
 }
@@ -462,9 +462,8 @@ input[type=submit]:hover {
 }
 
 .footer {
-    margin-top: -180px;
-    height: 180px;
-    clear: both;
+    height: 120px;
+    margin-top: 278px;
     background-color: #333;
 }
 
@@ -511,8 +510,8 @@ input[type=submit]:hover {
         padding-top: 10px;
     }
     .footer {
-        margin-top: -100px;
-        height: 100px;
+        margin-top: 60px;
+        height: 120px;
     }
     .content {
         margin-left: 20px;
