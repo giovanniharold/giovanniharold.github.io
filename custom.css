@@ -521,6 +521,9 @@ input[type=submit]:hover {
     .content {
         margin-left: 20px;
     }
+    .bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("images/chicago.jpg");
+    }
 }
 
 @media screen and (max-width: 768px) {
