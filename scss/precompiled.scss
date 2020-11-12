@@ -73,7 +73,7 @@ $inactive: #bebebe;
         right: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2});
     }
     &:checked {
-        background-color: rgb(145, 145, 145);
+        background-color: #a482d8;
         border-style: inset;
         border-color: #200c3f;
         border-width: 4px;
@@ -179,6 +179,16 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', 'Morey', 'Scafuri', 'Gam
             font-size: 1.1vw;
         }
     }
+}
+
+#TimelineInput[data-description="DJ"]::after {
+            display: none;
+        
+}
+
+#TimelineInput[data-description="Montessori"]::before {
+    display: none;
+
 }
 
 @media (min-width: $parentMaxWidth / $parentWidthBase) {
@@ -302,7 +312,7 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', 'Morey', 'Scafuri', 'Gam
 
 @media (max-width: 991px) {
     #aboutSection {
-        height: 2000px;
+        height: 2100px;
     }
 }
 
@@ -311,7 +321,7 @@ $descriptions: 'Montessori', 'LFA', 'Purdue', 'Banner', 'Morey', 'Scafuri', 'Gam
         width: 300px;
     }
     #aboutSection {
-        height: 2300px;
+        height: 2400px;
     }
     p {
         font-size: 18px;
