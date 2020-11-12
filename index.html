@@ -17,15 +17,15 @@
         <script src="custom.js"></script>
     </head>
 
-    <body>
+    <body id="bodySection">
 
-        <div id="top" class="bg" data-anchor="top">
+        <section id="top" class="bg">
             <div id="name" class="text-block">
                 <div id="topDesc">
                     <h1>Giovanni Harold</h1>
                     <p>Industrial Engineer/Data Science Enthusiast</p>
                     <p>
-                        <a href="CurrentResume.pdf" class="button" download><i class="fa fa-download"></i>  Resume</a>
+                        <a href="CurrentResume.pdf" class="button" target="_black" download><i class="fa fa-download"></i>  Resume</a>
                     </p>
                 </div>
             </div>
@@ -38,9 +38,9 @@
                 </div>
             </div> -->
 
-        </div>
+        </section>
         
-        <div id="aboutSection" class="target">
+        <section id="aboutSection">
             <div class="row">
 
                 <div class="col-lg-3" id="headshot">
@@ -226,9 +226,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="skillSection" class="target">
+        <section id="skillSection">
             <div id="skillBars" class="row">
 
                 <div id="hardskills" class="col-lg-9">
@@ -406,9 +406,9 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div id="projectSection" class="target">
+        <section id="projectSection">
             <!-- <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;text-shadow: 0 5px 0 #200c3f;">Projects</h1> -->
             <div class="content">
                 <a href="FirstProj.html">
@@ -418,9 +418,9 @@
                 <p>In this project I take a look at application markets</p>
                 <p>The goal is to identify a successful category that a dev team can pursue</p>
             </div>
-        </div>
+        </section>
 
-        <div id="contactSection" class="target">
+        <section id="contactSection">
             <h2 style="text-align: center;;font-family: Tahoma, sans-serif;font-weight: 500;text-shadow: 0 3px 0 #200c3f;"></h2>
             <hr id="contactHR">
             <div class="container" id="contact-form">
@@ -471,30 +471,31 @@
                 </form>
             </div>
 
-            <!-- <div class="row-xl-12 footer">
-                <div class="row" style="align-items: center;justify-content: center;height: 100%;">
-                    <div class="col-lg-3" style="align-items: center; justify-content: center;">
+            <div class="row-xl-12 footer">
+                <div style="align-items: center;justify-content: center;height: 100%;">
+                    <div class="col" style="align-items: center; justify-content: center;padding: 20px;">
                         <a href="https://www.linkedin.com/in/giovanniharold/" style="margin-left: calc(50% - 50px);">
-                            <img src="images/LI-Logo.png" width="100px">
+                            <img src="images/LI-Logo.png" width="80px">
                         </a>
                     </div>
-                    <div class="col-lg-3" style="align-items: center; justify-content: center;">
+                    <div class="col" style="align-items: center; justify-content: center;">
                         <p style="color: white;text-align: center;margin-bottom: 0px;">
                             Copyright &#169; 2020 Giovanni Harold
                         </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
-        </div>
+        </section>
 
-        <div class="topnav">
-            <a href="#top">Home</a>
+        <div id="topnav" class="topnav">
+            <a id="aTitle">Test</a>
             <div id="myLinks">
-              <a href="#aboutSection">About</a>
-              <a href="#skillSection">Skills</a>
-              <a href="#projectSection">Projects</a>
-              <a href="#contactSection">Contact</a>
+              <a id="a0" class="active" href="#top">Home</a>
+              <a id="a1" class="" href="#aboutSection">About</a>
+              <a id="a2" class="" href="#skillSection">Skills</a>
+              <a id="a3" class="" href="#projectSection">Projects</a>
+              <a id="a4" class="" href="#contactSection">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -503,19 +504,19 @@
 
         <nav id='navmenu'>
             <ul id="top-menu">
-                <li class="active">
+                <li class="" id="li1">
                     <a href='#top'><span>Home</span></a>
                 </li>
-                <li>
+                <li class="" id="li2">
                     <a href='#aboutSection'><span>About</span></a>
                 </li>
-                <li>
+                <li id="li3">
                     <a href='#skillSection'><span>Skills</span></a>
                 </li>
-                <li>
+                <li id="li4">
                     <a href='#projectSection'><span>Projects</span></a>
                 </li>
-                <li class="last">
+                <li id="li5" class="last">
                     <a href='#contactSection'><span>Contact</span></a>
                 </li>
             </ul>
