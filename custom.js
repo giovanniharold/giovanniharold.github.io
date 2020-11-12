@@ -1,15 +1,15 @@
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-var navbar = document.getElementById("navbar")
+// var navbar = document.getElementById("navbar")
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || (document.documentElement.scrollTop > (window.innerHeight - 30))) {
-    document.getElementById("navbar").style.top = "0px";
-    document.getElementById("navbar").style.position = "fixed";
-  } else {
-    document.getElementById("navbar").style.top = "-60px";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || (document.documentElement.scrollTop > (window.innerHeight - 30))) {
+//     document.getElementById("navbar").style.top = "0px";
+//     document.getElementById("navbar").style.position = "fixed";
+//   } else {
+//     document.getElementById("navbar").style.top = "-60px";
+//   }
+// }
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -35,3 +35,22 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(document).ready(function() {
+  $("#navmenu > ul > li").click(function(){
+      $("#navmenu > ul > li").each(function(){
+          $(this).removeClass("active");
+      });
+      $(this).addClass('active');
+      
+  });
+});
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
