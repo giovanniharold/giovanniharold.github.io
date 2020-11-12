@@ -4,6 +4,7 @@
         <title>Giovanni Harold</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="custom.css">
         <link rel="stylesheet" href="scss/compiled.css">
@@ -16,29 +17,30 @@
         <script src="custom.js"></script>
     </head>
 
-    <body>
+    <body id="bodySection">
 
-        <div id="top" class="bg">
+        <section id="top" class="bg">
             <div id="name" class="text-block">
                 <div id="topDesc">
                     <h1>Giovanni Harold</h1>
                     <p>Industrial Engineer/Data Science Enthusiast</p>
                     <p>
-                        <a href="CurrentResume.pdf" class="button" download><i class="fa fa-download"></i>Resume</a>
+                        <a href="CurrentResume.pdf" class="button" target="_black" download><i class="fa fa-download"></i>  Resume</a>
                     </p>
                 </div>
             </div>
-            <div id="navdiv">
+            <!-- <div id="navdiv">
                 <div id="mySidenav" class="container">
                     <a href="#aboutSection" id="about">About</a>
                     <a href="#skillSection" id="skills">Skills</a>
                     <a href="#projectSection" id="projects">Projects</a>
                     <a href="#contactSection" id="contact">Contact</a>
                 </div>
-            </div>
-        </div>
+            </div> -->
+
+        </section>
         
-        <div id="aboutSection">
+        <section id="aboutSection">
             <div class="row">
 
                 <div class="col-lg-3" id="headshot">
@@ -58,9 +60,7 @@
                 </div>
                 <div class="col-lg-8 pb-4 mr-0">
 
-                    <!-- <h1 id="TimelineHeading" >Notable inventions, <span>1910-2000</span></h1> -->
-
-                    <div class="flex-parent" style="width: 100%;">
+                    <div class="flex-parent" style="width: 100%;padding-top: 30px;">
                         <div class="input-flex-container">
                             <input id="TimelineInput" type="radio" name="timeline-dot" data-description="Montessori">
                             <div class="dot-info" data-description="Montessori">
@@ -226,9 +226,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="skillSection">
+        <section id="skillSection">
             <div id="skillBars" class="row">
 
                 <div id="hardskills" class="col-lg-9">
@@ -351,10 +351,8 @@
                             <div class="col-sm-12">
                       
                               <div class="carousel-controls testimonial-carousel-controls">
-                                <div class="control d-flex align-items-center justify-content-center prev mt-3"><i class="fa fa-chevron-left"></i></div>
-                                <div class="control d-flex align-items-center justify-content-center next mt-3"><i class="fa fa-chevron-right"></i></div>
                       
-                                <div class="testimonial-carousel">
+                                <div class="testimonial-carousel" style="margin-top: 20px;">
                                   <div class="h5 font-weight-normal one-slide mx-auto" style="margin-bottom: 30px;">
                                     <div class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
                                       <div class="message text-center blockquote w-100">"I enjoyed the time we spent working together and [he] would be an asset to any company."</div>
@@ -408,10 +406,10 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div id="projectSection">
-            <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;text-shadow: 0 5px 0 #200c3f;">Projects</h1>
+        <section id="projectSection">
+            <!-- <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;text-shadow: 0 5px 0 #200c3f;">Projects</h1> -->
             <div class="content">
                 <a href="FirstProj.html">
                 <img src="images/AppStores.jpg" class="projectPic">
@@ -420,10 +418,10 @@
                 <p>In this project I take a look at application markets</p>
                 <p>The goal is to identify a successful category that a dev team can pursue</p>
             </div>
-        </div>
+        </section>
 
-        <div id="contactSection">
-            <h2 style="text-align: center;;font-family: Tahoma, sans-serif;font-weight: 500;text-shadow: 0 3px 0 #200c3f;">Get in Touch</h2>
+        <section id="contactSection">
+            <h2 style="text-align: center;;font-family: Tahoma, sans-serif;font-weight: 500;text-shadow: 0 3px 0 #200c3f;"></h2>
             <hr id="contactHR">
             <div class="container" id="contact-form">
                 <form action="https://formspree.io/f/mjvprpwk" method="POST">
@@ -474,13 +472,13 @@
             </div>
 
             <div class="row-xl-12 footer">
-                <div class="row" style="align-items: center;justify-content: center;height: 100%;">
-                    <div class="col-lg-3" style="align-items: center; justify-content: center;">
+                <div style="align-items: center;justify-content: center;height: 100%;">
+                    <div class="col" style="align-items: center; justify-content: center;padding: 20px;">
                         <a href="https://www.linkedin.com/in/giovanniharold/" style="margin-left: calc(50% - 50px);">
-                            <img src="images/LI-Logo.png" width="100px">
+                            <img src="images/LI-Logo.png" width="80px">
                         </a>
                     </div>
-                    <div class="col-lg-3" style="align-items: center; justify-content: center;">
+                    <div class="col" style="align-items: center; justify-content: center;">
                         <p style="color: white;text-align: center;margin-bottom: 0px;">
                             Copyright &#169; 2020 Giovanni Harold
                         </p>
@@ -488,30 +486,43 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <!-- <div class="footer">
-            <div class="row" style="align-items: center;justify-content: center;height: 100%;">
-                <div class="col-lg-3" style="align-items: center; justify-content: center;">
-                    <a href="https://www.linkedin.com/in/giovanniharold/" style="margin-left: calc(50% - 50px);">
-                        <img src="images/LI-Logo.png" width="100px">
-                    </a>
-                </div>
-                <div class="col-lg-3" style="align-items: center; justify-content: center;">
-                    <p style="color: white;text-align: center;margin-bottom: 0px;">
-                        Copyright
-                    </p>
-                </div>
+        <div id="topnav" class="topnav">
+            <a id="aTitle">Test</a>
+            <div id="myLinks">
+              <a id="a0" class="active" href="#top">Home</a>
+              <a id="a1" class="" href="#aboutSection">About</a>
+              <a id="a2" class="" href="#skillSection">Skills</a>
+              <a id="a3" class="" href="#projectSection">Projects</a>
+              <a id="a4" class="" href="#contactSection">Contact</a>
             </div>
-        </div> -->
-
-        <div id="navbar">
-            <a class="navbtn" href="#top">Home</a>
-            <a class="navbtn" href="#aboutSection">About</a>
-            <a class="navbtn" href="#skillSection" onclick="changeClass()">Skills</a>
-            <a class="navbtn" href="#projectSection" onclick="changeClass()">Projects</a>
-            <a class="navbtn" href="#contactSection">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
+
+        <nav id='navmenu'>
+            <ul id="top-menu">
+                <li class="" id="li1">
+                    <a href='#top'><span>Home</span></a>
+                </li>
+                <li class="" id="li2">
+                    <a href='#aboutSection'><span>About</span></a>
+                </li>
+                <li id="li3">
+                    <a href='#skillSection'><span>Skills</span></a>
+                </li>
+                <li id="li4">
+                    <a href='#projectSection'><span>Projects</span></a>
+                </li>
+                <li id="li5" class="last">
+                    <a href='#contactSection'><span>Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        
 
     </body>
 </html>
