@@ -33,7 +33,7 @@
 #TimelineInput {
   width: 45px;
   height: 45px;
-  background-color: #200c3f;
+  background-color: #2e144d;
   position: relative;
   border-radius: 50%;
   display: block;
@@ -53,7 +53,7 @@
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #200c3f;
+  background-color: #2e144d;
   width: 4.4444444444vw;
   height: 5px;
   max-width: 55.5555555556px;
@@ -66,21 +66,21 @@
   right: calc(-4.4444444444vw + 12.5px);
 }
 #TimelineInput:checked {
-  background-color: #a482d8;
-  border-style: inset;
-  border-color: #200c3f;
+  background-color: #B5A5CC;
+  border-style: solid;
+  border-color: #2e144d;
   border-width: 4px;
   transition-duration: 1s;
-  box-shadow: 0 0 3px 0 #200c3f;
+  box-shadow: 0 0 3px 0 #2e144d;
 }
 #TimelineInput:checked::before {
-  background-color: #200c3f;
+  background-color: #2e144d;
 }
 #TimelineInput:checked::after {
-  background-color: #bebebe;
+  background-color: #C8C8C8;
 }
 #TimelineInput:checked ~ #TimelineInput, #TimelineInput:checked ~ #TimelineInput::before, #TimelineInput:checked ~ #TimelineInput::after {
-  background-color: #bebebe;
+  background-color: #C8C8C8;
   transition-duration: 1s;
 }
 #TimelineInput:checked + .dot-info .label {
@@ -314,7 +314,7 @@
     border-width: 0px;
   }
   #TimelineInput:checked + .dot-info {
-    background-color: #200c3f;
+    background-color: #2e144d;
   }
   #TimelineInput:checked + .dot-info span.year {
     font-size: 14px;
@@ -337,7 +337,7 @@
     z-index: 0;
     left: 0;
     margin-left: -70px;
-    background-color: #bebebe;
+    background-color: #C8C8C8;
   }
   .dot-info span.year {
     top: 0;
