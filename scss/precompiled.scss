@@ -3,8 +3,8 @@ $parentWidthBase: 0.8;
 $parentWidth: $parentWidthBase * 100vw;
 $parentMaxWidth: 1000px;
 $dotWidth: 25px;
-$active: #200c3f;
-$inactive: #bebebe;
+$active: #2e144d;
+$inactive: #C8C8C8;
 
 #TimelineHeading {
     text-align: center;
@@ -73,9 +73,9 @@ $inactive: #bebebe;
         right: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2});
     }
     &:checked {
-        background-color: #a482d8;
-        border-style: inset;
-        border-color: #200c3f;
+        background-color: #B5A5CC;
+        border-style: solid;
+        border-color: #2e144d;
         border-width: 4px;
         transition-duration: 1s;
         box-shadow: 0 0 3px 0 $active;
